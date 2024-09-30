@@ -9,16 +9,41 @@
   <body>
     <script src="./src/js/index.js"></script>
 
-    <button type="button" onclick="copyTextToClipboard('texto copiado')">
-      copy
-    </button>
-    <button
-      type="button"
-      onclick="shareText('este texto es el que se debe compartir')"
-    >
-      compartir
-    </button>
+    <button type="button" onclick="copyTextToClipboard('holis')">copy</button>
 
     <input />
+
+    <button id="share-btn">Compartir</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script>
+
+    <button
+      class="button"
+      data-sharer="facebook"
+      data-hashtag="hashtag"
+      data-url="texto para compartir"
+    >
+      Share on Facebook
+    </button>
+
+    <button
+      class="button"
+      data-sharer="email"
+      data-title="Awesome Url"
+      data-url="https://ellisonleao.github.io/sharer.js/"
+      data-subject="Hey! Check out that URL"
+      data-to="some@email.com"
+    >
+      Share via Email
+    </button>
+
+    <button
+      class="button"
+      data-sharer="whatsapp"
+      data-title="Checkout Sharer.js!"
+      data-url="https://ellisonleao.github.io/sharer.js/"
+    >
+      Share on Whatsapp
+    </button>
   </body>
 </html>
